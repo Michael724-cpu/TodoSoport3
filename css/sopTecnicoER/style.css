@@ -1,0 +1,113 @@
+/*** Service ***/
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.service-item {
+    position: relative;
+    height: 100%; /* Ajuste automático de la altura según el contenido */
+    width: 100%; /* Ancho del 100% para ocupar el espacio disponible */
+    padding: 20px; /* Ajusta el espaciado según tus necesidades */
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(174, 0, 0, 0.104);
+    transition: .5s;
+    flex: 1; /* Distribuye el espacio disponible de manera uniforme */
+}
+
+.service-item:hover {
+    background:  #040e7f; /* Color de fondo al pasar el mouse */
+}
+
+.service-item .service-icon {
+    margin: 0 auto 20px auto;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light); /* Color del ícono */
+    background: url(../../icons/icon-shape-primary.png) center center no-repeat;
+    transition: .5s;
+}
+
+.service-item:hover .service-icon {
+    color: var(--primary); /* Color del ícono al pasar el mouse */
+    background: url(../../icons/icon-shape-white.png);
+}
+
+.service-item h5,
+.service-item p {
+    transition: .5s;
+}
+
+.service-item:hover h5,
+.service-item:hover p {
+    color: var(--light); /* Color del texto al pasar el mouse */
+}
+
+.service-item a.btn {
+    position: relative;
+    display: flex;
+    color: var(--primary); /* Color del botón */
+    transition: .5s;
+    z-index: 1;
+}
+
+.service-item:hover a.btn {
+    color: var(--primary); /* Color del botón al pasar el mouse */
+}
+
+.service-item a.btn::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    background: #dddddd; /* Color del círculo detrás del botón */
+    transition: .5s;
+    z-index: -1;
+}
+
+.service-item:hover a.btn::before {
+    width: 100%;
+    background: var(--light); /* Color del círculo al pasar el mouse */
+}
+
+/* Estilos para los labels */
+form label {
+    color: white; /* Color blanco para el texto del label */
+    font-weight: normal; /* Puedes ajustar el peso de la fuente según tu preferencia */
+}
+
+/* Estilos para los inputs */
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"] {
+    border: 1px solid #ccc; /* Grosor del borde de los inputs */
+    padding: 8px; /* Espaciado interno de los inputs (ajustado para hacerlos menos gruesos) */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo del input */
+    font-weight: normal; /* Puedes ajustar el peso de la fuente según tu preferencia */
+}
+
+/* Estilos para el botón */
+form button[type="submit"] {
+    background-color: transparent; /* Fondo transparente */
+    color: #0414cd; /* Color de texto azul */
+    border: 2px solid #0414cd; /* Borde azul de 2px */
+    border-radius: 20px; /* Bordes más redondeados */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-weight: bold; /* Fuente en negrita */
+    transition: all 0.3s; /* Efecto de transición suave */
+}
+
+/* Cambiar el color del botón al pasar el mouse */
+form button[type="submit"]:hover {
+    background-color: #040e7f; /* Fondo azul al pasar el mouse */
+    color: white; /* Color de texto blanco al pasar el mouse */
+}

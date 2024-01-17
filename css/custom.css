@@ -1,0 +1,73 @@
+/* Estilos para el formulario de inicio de sesión */
+#loginbox {
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0px 0px 10px #888888;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#loginbox .panel-title  {
+    color: #f7fafc; /* Cambia el color del título del panel "loginbox" a un azul más fuerte */
+}
+
+
+.panel-title {
+    font-size: 24px;
+    text-align: center; /* Centra el texto del título en el panel */
+}
+
+
+
+.forgot-password a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el botón de inicio de sesión */
+#btn-login {
+    background-color: #d10404; /* Cambia el color a un rojo suave */
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+
+/* Estilos para el enlace de registro */
+.register-link a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el logotipo */
+.panel-body img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Agrega espacio entre el logo y los campos de entrada */
+}
+
+/* Espacio entre los campos de entrada */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Espacio superior para el campo de entrada de correo electrónico */
+#usuario {
+    margin-top: 2px;
+}
+
+/* Agrega más estilos personalizados según tus preferencias */
